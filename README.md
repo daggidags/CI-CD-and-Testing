@@ -70,7 +70,8 @@ Returns:
    ```bash
   docker run -d -p 8000:8000 --name sentiment-api \
   --mount source=sentiment_logs,target=/logs sentiment-api
-  
+  ```
+  ```bash
   docker run -d -p 8501:8501 --name sentiment-monitor \
   --mount source=sentiment_logs,target=/logs sentiment-monitor
    ```
